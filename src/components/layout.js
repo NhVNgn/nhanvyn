@@ -23,13 +23,14 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <React.Fragment>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,
           padding: `var(--size-gutter)`,
+          border: `2px dashed black`,
         }}
       >
         <main>{children}</main>
@@ -44,7 +45,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
-    </>
+    </React.Fragment>
   )
 }
 

@@ -1,0 +1,27 @@
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+
+.introText {
+  max-width: 70%;
+}
+
+.introText>p {
+  max-width: 95%;
+}
+
+.introImg {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+
+.social-icons {
+  margin-top: 5%;
+
+}
+
+.social-icons>a {
+  margin-left: 10%;
+}
