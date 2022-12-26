@@ -7,13 +7,13 @@ import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import About from '../components/about'
 import Projects from '../components/projects'
-
-
+import Experience from "../components/experience"
+import ExperienceList from "../components/experienceList"
 const IndexPage = () => (
   <Layout>
     <About />
-    <Projects/>
-
+    <Projects />
+    <ExperienceList />
   </Layout>
 )
 
