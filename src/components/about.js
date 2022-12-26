@@ -28,15 +28,13 @@ const About = () => {
 
         <div className="social-icons">
           <a href="https://github.com/NhVNgn">
-            <StaticImage src="../images/github-mark.png" style={iconStyles} alt="My picture" />
+            <StaticImage src="../../static/github-mark.png" style={iconStyles} alt="My picture" />
           </a>
           <a href="https://www.linkedin.com/in/nhan-vy-nguyen-50635716a/">
-            <StaticImage src="../images/linkedIn-icon.png" style={iconStyles} alt="My picture" />
+            <StaticImage src="../../static/linkedIn-icon.png" style={iconStyles} alt="My picture" />
           </a>
         </div>
       </div>
-
-
     </div>
   )
 };

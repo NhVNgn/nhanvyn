@@ -1,0 +1,53 @@
+.projectSection {
+  padding-top: 5%;
+}
+
+.gridContainer {
+  display: grid;
+
+  grid-template-columns: auto auto;
+
+  gap: 20px;
+}
+
+
+.projectWrapper {
+
+  max-width: 420px;
+  max-height: 100%;
+}
+
+.projectImage {
+  position: relative;
+}
+
+.projectContent {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.tag {
+  /* border: 1px dashed rgb(255, 255, 255); */
+  background: #615f5f;
+  border-radius: 20px;
+  margin: 8px 3px;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tag>h4 {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
