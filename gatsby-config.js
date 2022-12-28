@@ -23,19 +23,46 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `project`,
-        path: `${__dirname}/projects`,
+        path: `${__dirname}/content/projects`,
       },
     },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `experience`,
+        path: `${__dirname}/content/experiences`,
+      },
+    },
+
+
     `gatsby-transformer-json`,
 
 
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `image`,
-        path: `${__dirname}/projects/image`,
+        name: `projectImage`,
+        path: `${__dirname}/content/projects/image`,
       },
     },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `experienceImage`,
+        path: `${__dirname}/content/experiences/image`,
+      },
+    },
+
+
+
+
+
+
+
+
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

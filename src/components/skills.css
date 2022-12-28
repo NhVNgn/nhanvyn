@@ -1,0 +1,43 @@
+.SkillSection {
+  margin-top: 20%;
+}
+
+.skillBoardWrapper {
+  display: grid;
+
+  grid-template-columns: auto auto auto;
+
+  gap: 20px;
+
+
+}
+
+.Skills {
+  text-align: center;
+  font-size: 135%;
+
+}
+
+.board {
+  border: 1px solid rgba(6, 6, 6, 0.3);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(123, 120, 120);
+
+}
+
+
+.contentWrapper {
+  text-align: center;
+
+}
+
+.contentWrapper>h4 {
+  margin-bottom: 0;
+}
+
+.contentWrapper>ul {
+  margin-top: 2%;
+  list-style: none;
+  padding: 0;
+  list-style-type: none;
+}

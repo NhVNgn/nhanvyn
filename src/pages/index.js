@@ -9,11 +9,14 @@ import About from '../components/about'
 import Projects from '../components/projects'
 import Experience from "../components/experience"
 import ExperienceList from "../components/experienceList"
+import Skills from "../components/skills"
 const IndexPage = () => (
   <Layout>
     <About />
-    <Projects />
     <ExperienceList />
+    <Skills/>
+    <Projects />
+
   </Layout>
 )
 

@@ -1,3 +1,32 @@
+.About {
+  text-align: center;
+  font-size: 135%;
+  font-weight: 0;
+  border-top: 1px solid rgba(6, 6, 6, 0.3);
+  border-bottom: 1px solid rgba(6, 6, 6, 0.3);
+
+}
+
+.About>h1 {
+  margin-bottom: 0;
+}
+
+.downloadBt {
+  width: 150px;
+  height: 50px;
+  background-color: var(--color-primary);
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+
+
+.downloadBt:hover {
+  background-color: #5a957d;
+  cursor: pointer;
+}
+
 .intro {
   display: flex;
   flex-direction: row;
@@ -14,14 +43,19 @@
 .introImg {
   display: flex;
   flex-direction: column;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .social-icons {
-  margin-top: 5%;
-
+  margin-top: 0%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-icons>a {
-  margin-left: 10%;
+.social-icons>div {
+
+  margin-left: 2%;
 }

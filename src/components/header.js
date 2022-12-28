@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
       className="TextLogo"
       to="/"
     >
-      {siteTitle}
+      { }
     </h1>
     <nav className="navigationWrapper">
       <ul className="navigationList">

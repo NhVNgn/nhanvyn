@@ -1,0 +1,35 @@
+[
+  {
+    "company": "Microchip Technology - Microsemi",
+    "title": "Database engineer internship",
+    "bulletList": [
+      "Improved weekly project review process by developing python scripts with Jira REST API and Jira query to fetch issues from the Jira production server. Automated sending issues to project managers' emails with Python SMTP",
+      "Researched and implemented Jira Advanced Roadmaps feature to track progress and dependencies between project milestones.",
+      "Consulted with project managers and engineers across Microchip departments to collect past CSV data for constructing pivot charts and building program metrics database with Microsoft Access"
+    ],
+    "timeRange": "Jan 2022 - May 2022",
+    "image": "./image/microsemi.jpg"
+  },
+  {
+    "company": "SEEDA",
+    "title": "Term Project Competitor",
+    "bulletList": [
+      "Joined a competion held by SEEDA company to develop the best remote solution for communication between construction workers and construction supervisors",
+      "Implemented remote chat, room hosting functionality with Android Studio and Firebase. Presented demo to competion organizer and won the prize of $50"
+    ],
+    "timeRange": "Aug 2020 - Dec 2020",
+    "image": "./image/rippen.jpg"
+  },
+  {
+    "company": "FIC",
+    "title": "IT support - College Student Leadership program",
+    "bulletList": [
+      "Assisted college students and instructors with technical support including ID activation, printing service and class-room equipment troubleshooting",
+      "Refilled office supplies and categorized equipment in instructor room, which improved wait times for instructors to print out resources for their class",
+      "Provided instructors with available adapters and cables. Assisted instructors with moving to different classroom when technical issues happen",
+      "Instructed new students to use computers and scanners for creating and documenting their papers"
+    ],
+    "timeRange": "May 2019 - Dec 2019",
+    "image": "./image/fic.jpg"
+  }
+]

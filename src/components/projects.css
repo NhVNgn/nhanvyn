@@ -1,5 +1,10 @@
 .projectSection {
-  padding-top: 5%;
+  margin-top: 20%;
+}
+
+.Project {
+  text-align: center;
+  font-size: 135%;
 }
 
 .gridContainer {
@@ -15,7 +20,7 @@
 
   max-width: 420px;
   max-height: 100%;
-  box-shadow: 10px 5px 5px  rgb(93, 93, 93);
+  box-shadow: 10px 5px 5px rgb(93, 93, 93);
 }
 
 .projectImage {

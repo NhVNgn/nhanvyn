@@ -25,7 +25,7 @@
 }
 
 .header {
-  padding-top: var(--space-5);
+
   padding-left: var(--size-gutter);
   padding-right: var(--size-gutter);
   display: flex;
@@ -34,10 +34,8 @@
 
 
 .navigationWrapper {
-  margin-left: 40%;
-  position: relative;
+  margin-left: 28%;
 
-  display: flex;
 }
 
 .navigationList {

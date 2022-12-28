@@ -1,6 +1,6 @@
 [
   {
-    "title": "Image-organizer web appdaedawd",
+    "title": "Image-organizer web app",
     "slug": "project-1",
     "url": "https://.example.com/",
     "image": "./image/project1.png",
@@ -22,12 +22,11 @@
       "C++",
       "CMake",
       "GoogleTest",
-      "SocketProgramming",
-      "Boost"
+      "SocketProgramming"
     ]
   },
   {
-    "title": "JSON game engine",
+    "title": "Android App for construction workers",
     "slug": "project-1",
     "url": "https://.example.com/",
     "image": "./image/project2.png",
@@ -36,8 +35,20 @@
       "C++",
       "CMake",
       "GoogleTest",
-      "SocketProgramming",
-      "Boost"
+      "SocketProgramming"
+    ]
+  },
+  {
+    "title": "Android Restaurant Inspector",
+    "slug": "project-1",
+    "url": "https://.example.com/",
+    "image": "./image/project2.png",
+    "description": "C++, lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut ",
+    "tag": [
+      "C++",
+      "CMake",
+      "GoogleTest",
+      "SocketProgramming"
     ]
   }
 ]

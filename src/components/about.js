@@ -2,37 +2,65 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "./about.css"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
+
 const avatarStyles = {
-  width: '150px',
-  height: '150px',
-  borderRadius: '50%',
+  width: '170px',
+  height: '214px',
+  borderRadius: '10px',
+
 };
 
-
+const downloadIconStyle = {
+  marginRight: '4%',
+}
 const iconStyles = {
-  width: '50px',
-  height: '50px',
+  width: '25px',
+  height: '25px',
   borderRadius: '50%',
+  color: 'var(--color-text)',
+
 };
 
 const About = () => {
   return (
-    <div className="intro">
-      <div className="introText">
-        <h1> Welcome to my blog! </h1>
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p> I am Vy Nhan Nguyen, fourth year SFU Computer Science student, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-      </div>
-      <div className="introImg">
-        <StaticImage src="../images/avatar.jpg" style={avatarStyles} alt="My picture" />
+    <div className="AboutWrapper">
+      <div className="About">
+        <h1><span className="spanAbout">SUMMARY</span></h1>
 
         <div className="social-icons">
-          <a href="https://github.com/NhVNgn">
-            <StaticImage src="../../static/github-mark.png" style={iconStyles} alt="My picture" />
-          </a>
-          <a href="https://www.linkedin.com/in/nhan-vy-nguyen-50635716a/">
-            <StaticImage src="../../static/linkedIn-icon.png" style={iconStyles} alt="My picture" />
-          </a>
+          <div className="github">
+            <a href="https://github.com/NhVNgn">
+              <FontAwesomeIcon icon={faGithubSquare} style={iconStyles} />
+            </a>
+          </div>
+          <div className="linkedIn">
+            <a href="https://www.linkedin.com/in/nhan-vy-nguyen-50635716a/">
+              <FontAwesomeIcon icon={faLinkedin} style={iconStyles} />
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div className="intro">
+        <div className="introText">
+          <h1>I'm Nhan Vy Nguyen</h1>
+          <p> I am fourth year SFU Computer Science student, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          </p>
+          <button className="downloadBt">
+            <FontAwesomeIcon icon={faDownload} style={downloadIconStyle} />
+
+            My Resume
+          </button>
+        </div>
+        <div className="introImg">
+          <StaticImage src="../images/avatar.jpg" style={avatarStyles} alt="My picture" />
+
+
         </div>
       </div>
     </div>

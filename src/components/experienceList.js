@@ -6,53 +6,47 @@ import "./experienceList.css"
 import Experience from "./experience";
 
 
-const jobs = [
-  {
-    "company": "Microchip Technology - Microsemi",
-    "title": "Database Engineer",
-    "bulletList": [
-      "web-app, lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt utwadwadawdwdwadawdawdwadwdawd", "wadkawodkawd", "wadawdadawdawd"
-    ],
-    "timeRange": "Jan 2022 - May 2022",
-    "imageUrl": "../../static/microsemi.jpg"
-
-  },
-  {
-    "company": "SEEDA",
-    "title": "Educational Project Competitor",
-    "bulletList": [
-      "awdawda", "web-app, lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt utwadwadawdwdwadawdawdwadwdawd", "wadawdadawdawd"
-    ],
-    "timeRange": "May 2019 - Dec 2019",
-    "imageUrl": "../../static/rippen.jpg"
-  },
-  {
-    "company": "FIC",
-    "title": "IT support - College Student Leadership program",
-    "bulletList": [
-      "awdawda", "wadkawodkawd", "wadawdadawdawd"
-    ],
-    "timeRange": "May 2019 - Dec 2019",
-    "imageUrl": "../../static/fic.jpg"
-
-  }
-];
-
 
 
 const ExperienceList = () => {
+  const data = useStaticQuery(graphql`
+  {
+    allExperiencesJson{
+      edges{
+        node{
+          company,
+          title,
+          bulletList,
+          timeRange,
+          image{
+            childImageSharp{
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  }
+  `);
+  const jobs = data.allExperiencesJson.edges;
+
 
 
   return (
-    <div>
-      <h1>Experience</h1>
+    <div className="experiencesList">
+      <div className="Experience">
+        <h1>Experience</h1>
+      </div>
+
+
+
       {
-        jobs.map((job, index) => {
+        jobs.map(({ node: job }, index) => {
           const company = job.company;
           const title = job.title;
           const timeRange = job.timeRange;
           const bulletList = job.bulletList;
-          const imageUrl = job.imageUrl;
+          const imageData = getImage(job.image);
           return (
             <div className="experienceWrapperWrapper" key={index}>
               <Experience
@@ -60,7 +54,7 @@ const ExperienceList = () => {
                 title={title}
                 timeRange={timeRange}
                 bulletList={bulletList}
-                imageUrl={imageUrl}
+                imageData={imageData}
 
               />
             </div>

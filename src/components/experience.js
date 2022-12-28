@@ -14,14 +14,14 @@ const imgStyles = {
   marginBottom: '0.5%'
 };
 
-const Experience = ({ company, title, timeRange, bulletList, imageUrl }) => {
+const Experience = ({ company, title, timeRange, bulletList, imageData }) => {
   const [show, setShow] = useState(false);
 
   return (
     <div className="experienceSection">
       <div className="experienceWrapper" onClick={() => setShow(!show)}>
         <div className="experienceTab">
-          <StaticImage src={imageUrl} alt="company Icon" style={imgStyles} />
+          <GatsbyImage image={imageData} alt="companyImage" style={imgStyles} />
           <div className="jobIntro">
             <h4>{company}</h4>
             <h5>{title}</h5>

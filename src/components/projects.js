@@ -47,7 +47,10 @@ const Projects = () => {
 
   return (
     <div className="projectSection">
-      <h1> Projects.</h1>
+      <div className="Project">
+        <h1> Projects</h1>
+      </div>
+
 
 
       <div className="gridContainer">
