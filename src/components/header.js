@@ -5,14 +5,9 @@ import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <div className="header">
-    <h1
-      className="TextLogo"
-      to="/"
-    >
-      { }
-    </h1>
+
     <nav className="navigationWrapper">
-      <ul className="navigationList">
+      <ul>
         <li>
           <Link className="navLink" to="/about">
             About
