@@ -51,7 +51,7 @@
  */
 
 .navigationWrapper {
-  
+
   text-align: center;
 
 
@@ -61,21 +61,19 @@
 
 
   list-style: none;
-  
+
 
 }
 
 .navigationWrapper ul li {
- 
+
   display: inline-block;
-  padding-right:60px;
- 
+  padding-right: 60px;
+  cursor: pointer;
 }
-li:not(:last-child) {
-  
-}
+
 
 .navLink {
   text-decoration: none;
-
+  
 }

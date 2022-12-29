@@ -11,21 +11,41 @@ import Experience from "../components/experience"
 import ExperienceList from "../components/experienceList"
 import Skills from "../components/skills"
 import Contact from "../components/contact"
-const IndexPage = () => (
-  <Layout>
-    <About />
-    <ExperienceList />
-    <Skills/>
-    <Projects />
-    <Contact/>
-  </Layout>
-)
+import Header from "../components/header"
+import { useStaticQuery, graphql } from "gatsby"
+import { useRef } from "react"
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Home" />
+
+const IndexPage = () => {
+
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  const experienceListRef = useRef(null);
+
+
+  return (
+    <React.Fragment>
+      <Header experienceRef={experienceListRef} />
+      <Layout>
+        <About />
+        <ExperienceList experienceRef={experienceListRef} />
+        <Skills />
+        <Projects />
+        <Contact />
+      </Layout>
+    </React.Fragment>
+
+  )
+};
+
+
 
 export default IndexPage

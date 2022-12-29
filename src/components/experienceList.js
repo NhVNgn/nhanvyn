@@ -1,14 +1,14 @@
 import * as React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
-
+import { useEffect } from "react"
 import "./experienceList.css"
 import Experience from "./experience";
 
 
 
 
-const ExperienceList = () => {
+const ExperienceList = ({ experienceRef }) => {
   const data = useStaticQuery(graphql`
   {
     allExperiencesJson{
@@ -31,10 +31,13 @@ const ExperienceList = () => {
   const jobs = data.allExperiencesJson.edges;
 
 
+  useEffect(() => {
+    console.log(experienceRef.current, 'experienceList.js');
+  }, [])
 
   return (
     <div className="experiencesList">
-      <div className="Experience">
+      <div ref={experienceRef} className="Experience">
         <h1>Experience</h1>
       </div>
 

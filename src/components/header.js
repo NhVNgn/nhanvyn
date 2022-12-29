@@ -1,43 +1,51 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import "./header.css"
+import { useRef, useEffect } from "react"
 
 
-const Header = ({ siteTitle }) => (
-  <div className="header">
 
-    <nav className="navigationWrapper">
-      <ul>
-        <li>
-          <Link className="navLink" to="/about">
+
+const Header = ({ experienceRef }) => {
+  const srollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop - 100,
+      behavior: 'smooth'
+    })
+  }
+
+
+
+  useEffect(() => {
+    console.log(experienceRef.current, 'header.js');
+  }, [])
+
+  return (
+    <div className="header">
+      <nav className="navigationWrapper">
+        <ul>
+          <li>
             About
-          </Link>
-        </li>
-        <li>
-          <Link className="navLink" to="/projects">
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link className="navLink" to="/experience">
+          </li>
+          
+          <li onClick={() => srollToSection(experienceRef)}>
             Experience
-          </Link>
-        </li>
-        <li>
-          <Link className="navLink" to="/resume">
+          </li>
+
+          <li>
+            Project
+          </li>
+
+          <li>
             Resume
-          </Link>
-        </li>
-
-        <li>
-          <Link className="navLink" to="/contact">
+          </li>
+          <li>
             Contact
-          </Link>
-        </li>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  )
+};
 
-      </ul>
-    </nav>
-  </div>
-)
-
-export default Header
+export default Header;

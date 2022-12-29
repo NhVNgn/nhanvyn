@@ -42,7 +42,6 @@ const Projects = () => {
   `);
 
   const projects = data.allProjectsJson.edges;
-  console.log(projects);
 
 
   return (
@@ -88,7 +87,7 @@ const Projects = () => {
             const title = project.title;
             const description = project.description;
             const imageData = getImage(project.image);
-            console.log(imageData);
+
             return (
               <div className="projectWrapper" key={index}>
                 <div className="projectImage">
