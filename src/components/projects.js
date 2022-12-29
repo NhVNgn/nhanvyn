@@ -17,7 +17,7 @@ const gradientStyles = {
 }
 
 
-const Projects = () => {
+const Projects = ({ projectRef }) => {
   const data = useStaticQuery(graphql`
     {
       allProjectsJson{
@@ -45,7 +45,7 @@ const Projects = () => {
 
 
   return (
-    <div className="projectSection">
+    <div ref={projectRef} className="projectSection">
       <div className="Project">
         <h1> Projects</h1>
       </div>

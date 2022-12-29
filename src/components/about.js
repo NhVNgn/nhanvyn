@@ -25,9 +25,9 @@ const iconStyles = {
 
 };
 
-const About = () => {
+const About = ({ aboutRef }) => {
   return (
-    <div className="AboutWrapper">
+    <div ref={aboutRef} className="AboutWrapper">
       <div className="About">
         <h1><span className="spanAbout">SUMMARY</span></h1>
 
@@ -48,7 +48,7 @@ const About = () => {
 
       <div className="intro">
         <div className="introText">
-          <h1>I'm Nhan Vy Nguyen</h1>
+          <h1>I'M NGUYEN NHAN VY</h1>
           <p> I am fourth year SFU Computer Science student, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
           </p>
           <button className="downloadBt">

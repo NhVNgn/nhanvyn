@@ -5,12 +5,12 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import "./contact.css"
 
-const Contact = () => {
+const Contact = ({contactRef}) => {
 
 
   return (
 
-    <div className="ContactSection">
+    <div ref={contactRef} className="ContactSection">
       <div className="Contact">
         <h1>
           Contact

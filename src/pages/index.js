@@ -28,18 +28,27 @@ const IndexPage = () => {
     }
   `)
 
+  const aboutRef = useRef(null);
   const experienceListRef = useRef(null);
-
+  const skillRef = useRef(null);
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
 
   return (
     <React.Fragment>
-      <Header experienceRef={experienceListRef} />
+      <Header
+        experienceRef={experienceListRef}
+        aboutRef={aboutRef}
+        skillRef={skillRef}
+        projectRef={projectRef}
+        contactRef={contactRef}
+      />
       <Layout>
-        <About />
+        <About aboutRef={aboutRef} />
         <ExperienceList experienceRef={experienceListRef} />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Skills skillRef={skillRef} />
+        <Projects  projectRef={projectRef}/>
+        <Contact contactRef={contactRef}/>
       </Layout>
     </React.Fragment>
 

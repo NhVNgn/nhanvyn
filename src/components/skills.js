@@ -5,13 +5,13 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import "./skills.css"
 
-const Skills = () => {
+const Skills = ({ skillRef }) => {
 
 
   return (
 
     <div className="SkillSection">
-      <div className="Skills">
+      <div ref={skillRef} className="Skills">
         <h1>Skills</h1>
       </div>
 
