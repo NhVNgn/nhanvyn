@@ -1,6 +1,6 @@
 [
   {
-    "title": "Image-organizer website for photographers",
+    "title": "Image-organizer web app",
     "image": "./image/project1.png",
     "description": "Photo organizer web app that saves users' time by using Tensorflow AI to set names for images",
     "tag": [
