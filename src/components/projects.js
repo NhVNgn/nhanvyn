@@ -6,8 +6,8 @@ import "./projects.css"
 
 
 const imgStyles = {
-  width: '420px',
-  height: '450px',
+  maxwidth: '27rem',
+  height: '30rem',
 };
 
 const gradientStyles = {

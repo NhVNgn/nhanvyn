@@ -6,8 +6,8 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import "./experience.css"
 
 const imgStyles = {
-  width: '45px',
-  height: '45px',
+  width: '3.5rem',
+  height: '3.5rem',
   border: '1px solid rgba(105, 100, 100, 0.3)',
   marginTop: '0.5%',
   marginLeft: '0.5%',

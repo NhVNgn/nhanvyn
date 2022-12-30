@@ -8,8 +8,8 @@ import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const avatarStyles = {
-  width: '170px',
-  height: '214px',
+  maxWidth: '15vw',
+  maxHeight: '18vw',
   borderRadius: '10px',
 
 };
@@ -53,7 +53,7 @@ const About = ({ aboutRef }) => {
           </p>
           <button className="downloadBt">
             <FontAwesomeIcon icon={faDownload} style={downloadIconStyle} />
-
+            
             My Resume
           </button>
         </div>
