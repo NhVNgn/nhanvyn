@@ -1,0 +1,16 @@
+[
+  {
+    "title" : "Image-organizer web app",
+    "slug": "project-1",
+    "url": "https://.example.com/",
+    "image": "./sea.jpg",
+    "description":"lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut " 
+  },
+  {
+    "title": "JSON game engine",
+    "slug": "project-1",
+    "url": "https://.example.com/",
+    "image": "./sea.jpg",
+    "description": "lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut "
+  }
+]
