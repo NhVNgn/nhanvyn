@@ -28,6 +28,7 @@ const Projects = ({ projectRef }) => {
             slug,
             url,
             description,
+            tag,
             image{
               publicURL,
               childImageSharp{
@@ -87,9 +88,9 @@ const Projects = ({ projectRef }) => {
             const title = project.title;
             const description = project.description;
             const imageData = getImage(project.image);
-
+            const tags = project.tag;
             return (
-              <div className="projectWrapper" key={index}>
+              <div className="projectWrapper" key={title}>
                 <div className="projectImage">
                   {/* <StaticImage src="../images/sea.jpg" alt="project image" style={imgStyles} /> */}
 
@@ -101,7 +102,7 @@ const Projects = ({ projectRef }) => {
                     <p> {description} </p>
 
                     <div className="tagContainer">
-                      <div className="tag">
+                      {/* <div className="tag">
                         <h4>inside tag1</h4>
                       </div>
 
@@ -113,8 +114,16 @@ const Projects = ({ projectRef }) => {
                       </div>
                       <div className="tag">
                         <h4>inside tag1</h4>
-                      </div>
-
+                      </div> */}
+                      {
+                        tags.map((t, t_index) => {
+                          return (
+                            <div className="tag" key={t_index}>
+                              <h4>{t}</h4>
+                            </div>
+                          )
+                        })
+                      }
 
                     </div>
                   </div>
