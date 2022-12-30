@@ -17,7 +17,7 @@ const gradientStyles = {
 }
 
 
-const Projects = () => {
+const Projects = ({ projectRef }) => {
   const data = useStaticQuery(graphql`
     {
       allProjectsJson{
@@ -28,6 +28,7 @@ const Projects = () => {
             slug,
             url,
             description,
+            tag,
             image{
               publicURL,
               childImageSharp{
@@ -45,7 +46,7 @@ const Projects = () => {
 
 
   return (
-    <div className="projectSection">
+    <div ref={projectRef} className="projectSection">
       <div className="Project">
         <h1> Projects</h1>
       </div>
@@ -87,9 +88,9 @@ const Projects = () => {
             const title = project.title;
             const description = project.description;
             const imageData = getImage(project.image);
-
+            const tags = project.tag;
             return (
-              <div className="projectWrapper" key={index}>
+              <div className="projectWrapper" key={title}>
                 <div className="projectImage">
                   {/* <StaticImage src="../images/sea.jpg" alt="project image" style={imgStyles} /> */}
 
@@ -101,7 +102,7 @@ const Projects = () => {
                     <p> {description} </p>
 
                     <div className="tagContainer">
-                      <div className="tag">
+                      {/* <div className="tag">
                         <h4>inside tag1</h4>
                       </div>
 
@@ -113,8 +114,16 @@ const Projects = () => {
                       </div>
                       <div className="tag">
                         <h4>inside tag1</h4>
-                      </div>
-
+                      </div> */}
+                      {
+                        tags.map((t, t_index) => {
+                          return (
+                            <div className="tag" key={t_index}>
+                              <h4>{t}</h4>
+                            </div>
+                          )
+                        })
+                      }
 
                     </div>
                   </div>

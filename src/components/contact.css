@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+.Contact>p {
+  font-size: var(--font-sm);
+
+}
+
 input[type=text],
 select,
 textarea {
@@ -39,6 +44,6 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-#subject{
+#subject {
   height: 200px;
 }

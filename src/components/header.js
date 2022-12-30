@@ -6,7 +6,7 @@ import { useRef, useEffect } from "react"
 
 
 
-const Header = ({ experienceRef }) => {
+const Header = ({ experienceRef, aboutRef, skillRef, projectRef, contactRef }) => {
   const srollToSection = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop - 100,
@@ -16,30 +16,31 @@ const Header = ({ experienceRef }) => {
 
 
 
-  useEffect(() => {
-    console.log(experienceRef.current, 'header.js');
-  }, [])
+  // useEffect(() => {
+  //   console.log(experienceRef.current, 'header.js');
+  // }, [])
 
   return (
     <div className="header">
       <nav className="navigationWrapper">
         <ul>
-          <li>
+          <li onClick={() => srollToSection(aboutRef)}>
             About
           </li>
-          
+
           <li onClick={() => srollToSection(experienceRef)}>
             Experience
           </li>
 
-          <li>
+          <li onClick={() => srollToSection(skillRef)}>
+            Skills
+          </li>
+          <li onClick={() => srollToSection(projectRef)}>
             Project
           </li>
 
-          <li>
-            Resume
-          </li>
-          <li>
+
+          <li onClick={() => srollToSection(contactRef)}>
             Contact
           </li>
         </ul>
