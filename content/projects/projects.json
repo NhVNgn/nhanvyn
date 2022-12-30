@@ -1,54 +1,49 @@
 [
   {
     "title": "Image-organizer web app",
-    "slug": "project-1",
-    "url": "https://.example.com/",
     "image": "./image/project1.png",
-    "description": "web-app, lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut ",
+    "description": "Photo organizer web app that saves users' time by using Tensorflow AI to set names for images",
     "tag": [
       "React",
       "JavaScript",
       "Tensorflow",
       "Firebase"
-    ]
+    ],
+    "link": "https://github.com/NhVNgn/Image-Organizer"
   },
   {
     "title": "JSON game engine",
-    "slug": "project-1",
-    "url": "https://.example.com/",
     "image": "./image/project2.png",
-    "description": "C++, lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut ",
+    "description": "C++ Kahoot-inspired game engine that allows users to host their game room on a decentralized server and customize their games by inputting JSON data ",
     "tag": [
       "C++",
       "CMake",
       "GoogleTest",
-      "SocketProgramming"
-    ]
+      "Boost"
+    ],
+    "link": "https://github.com/NhVNgn/social-gaming-platform"
   },
   {
     "title": "Android App for construction workers",
-    "slug": "project-1",
-    "url": "https://.example.com/",
-    "image": "./image/project2.png",
-    "description": "C++, lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut ",
+    "image": "./image/project3.png",
+    "description": "A mobile networking app that aims to improve communication between construction workers and construction supervisors",
     "tag": [
       "C++",
       "CMake",
-      "GoogleTest",
-      "SocketProgramming"
-    ]
+      "GoogleTest"
+    ],
+    "link": "https://github.com/NhVNgn/SEEDA-remote-worker"
   },
   {
-    "title": "Android Restaurant Inspector",
-    "slug": "project-1",
-    "url": "https://.example.com/",
-    "image": "./image/project2.png",
-    "description": "C++, lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut ",
+    "title": "Restaurant dine-in website",
+    "image": "./image/project4.png",
+    "description": "A restaurant website that allows customer to book table and order food through an Vue interface, backend was built with Flask to pull data from MySQL http server",
     "tag": [
-      "C++",
-      "CMake",
-      "GoogleTest",
-      "SocketProgramming"
-    ]
+      "Flask",
+      "MySQL",
+      "Vue",
+      "PHPmyAdmin"
+    ],
+    "link": "https://youtu.be/JDPKr0pdSjc"
   }
 ]

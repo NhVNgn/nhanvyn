@@ -13,6 +13,7 @@ const Skills = ({ skillRef }) => {
     <div className="SkillSection">
       <div ref={skillRef} className="Skills">
         <h1>Skills</h1>
+        <p>What I learned</p>
       </div>
 
       <div className="skillBoardWrapper">
@@ -22,18 +23,18 @@ const Skills = ({ skillRef }) => {
               Programming Languages
             </h4>
             <ul>
-              <li>C/C++</li>
-              <li>C/C++</li>
-              <li>C/C++</li>
+              <li>C/C++, C#, MySQL</li>
+              <li>Python, Java, Rust</li>
+              <li>HTML, CSS, JavaScript</li>
             </ul>
 
             <h4>
               Frameworks
             </h4>
             <ul>
-              <li>C/C++</li>
-              <li>C/C++</li>
-              <li>C/C++</li>
+              <li>Node.JS</li>
+              <li>ReactJS, Gatsby</li>
+              <li>Flask, SpringBoot</li>
             </ul>
 
           </div>
@@ -44,21 +45,21 @@ const Skills = ({ skillRef }) => {
         <div className="board">
           <div className="contentWrapper">
             <h4>
-              Programming Languages
+              Database
             </h4>
             <ul>
-              <li>C/C++</li>
-              <li>C/C++</li>
-              <li>C/C++</li>
+              <li>Firebase</li>
+              <li>MySQL</li>
+              <li>JQL</li>
             </ul>
 
             <h4>
-              Frameworks
+              Version control
             </h4>
             <ul>
-              <li>C/C++</li>
-              <li>C/C++</li>
-              <li>C/C++</li>
+              <li>Jira</li>
+              <li>Bitbucket</li>
+              <li>Github, GitLab</li>
             </ul>
 
           </div>
@@ -69,21 +70,22 @@ const Skills = ({ skillRef }) => {
         <div className="board">
           <div className="contentWrapper">
             <h4>
-              Programming Languages
+              Knowledge
             </h4>
             <ul>
-              <li>C/C++</li>
-              <li>C/C++</li>
-              <li>C/C++</li>
+              <li>OOP, Design Pattern</li>
+              <li>Multithreading</li>
+              <li>Networking</li>
             </ul>
 
             <h4>
-              Frameworks
+              IDE/Compiler
             </h4>
             <ul>
-              <li>C/C++</li>
-              <li>C/C++</li>
-              <li>C/C++</li>
+              <li>VSCode</li>
+              <li>Visual Studio</li>
+              <li>Android Studio</li>
+              <li>IntelliJ, Eclipse</li>
             </ul>
 
           </div>

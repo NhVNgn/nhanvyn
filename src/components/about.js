@@ -9,7 +9,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const avatarStyles = {
   maxWidth: '15vw',
-  maxHeight: '18vw',
+  height: '19vw',
   borderRadius: '10px',
 
 };
@@ -18,14 +18,19 @@ const downloadIconStyle = {
   marginRight: '4%',
 }
 const iconStyles = {
-  width: '25px',
-  height: '25px',
+  width: '2.5vw',
+  height: '2.5vw',
   borderRadius: '50%',
   color: 'var(--color-text)',
 
 };
 
 const About = ({ aboutRef }) => {
+
+  const openResume = () => {
+    window.open("/resume2023.pdf", "_blank");
+  }
+
   return (
     <div ref={aboutRef} className="AboutWrapper">
       <div className="About">
@@ -48,12 +53,12 @@ const About = ({ aboutRef }) => {
 
       <div className="intro">
         <div className="introText">
-          <h1>I'M NGUYEN NHAN VY</h1>
-          <p> I am fourth year SFU Computer Science student, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          <h1>NGUYEN NHAN VY</h1>
+          <p> I am a fourth year SFU Computer Science student, my area of interest includes full stack development and dev operations. I have experience with backend development using Flask and SpringBoot. I also taught myself frontend tools likes ReactJS and Vue which I have combined with Firebase to build some interesting projects, please check them out at the project section!
           </p>
-          <button className="downloadBt">
+          <button className="downloadBt" onClick={openResume} >
             <FontAwesomeIcon icon={faDownload} style={downloadIconStyle} />
-            
+
             My Resume
           </button>
         </div>

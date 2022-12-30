@@ -5,6 +5,11 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import "./projects.css"
 
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+
+
 const imgStyles = {
   maxwidth: '27rem',
   height: '30rem',
@@ -17,6 +22,14 @@ const gradientStyles = {
 }
 
 
+const iconStyles = {
+
+
+  cursor: 'pointer',
+  color: 'white'
+
+};
+
 const Projects = ({ projectRef }) => {
   const data = useStaticQuery(graphql`
     {
@@ -25,10 +38,9 @@ const Projects = ({ projectRef }) => {
           node{
             id,
             title,
-            slug,
-            url,
             description,
             tag,
+            link,
             image{
               publicURL,
               childImageSharp{
@@ -49,6 +61,7 @@ const Projects = ({ projectRef }) => {
     <div ref={projectRef} className="projectSection">
       <div className="Project">
         <h1> Projects</h1>
+        <p>What I built</p>
       </div>
 
 
@@ -89,16 +102,27 @@ const Projects = ({ projectRef }) => {
             const description = project.description;
             const imageData = getImage(project.image);
             const tags = project.tag;
+            const link = project.link;
             return (
               <div className="projectWrapper" key={title}>
                 <div className="projectImage">
                   {/* <StaticImage src="../images/sea.jpg" alt="project image" style={imgStyles} /> */}
 
+
+
                   <GatsbyImage image={imageData} alt="project image" style={imgStyles} />
                   <div className="Gradient" style={gradientStyles} />
 
+
+
+
                   <div className="projectContent">
-                    <h2>{title}</h2>
+                    <h2>{title}&nbsp;
+                      <a href={link} target="_blank">
+                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={iconStyles} href />
+                      </a>
+
+                    </h2>
                     <p> {description} </p>
 
                     <div className="tagContainer">

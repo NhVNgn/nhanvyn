@@ -42,7 +42,7 @@ const Contact = ({ contactRef }) => {
         <h1>
           Contact
         </h1>
-        <p> Send me a message when you have any question or want to collaborate with me on a project</p>
+        <p> Send me a message whether you have any question or want to collaborate with me on a project</p>
       </div>
 
       <div className="container">
