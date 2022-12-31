@@ -36,8 +36,6 @@ module.exports = {
         path: `${__dirname}/content/experiences`,
       },
     },
-
-
     `gatsby-transformer-json`,
 
 
