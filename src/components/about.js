@@ -28,7 +28,7 @@ const iconStyles = {
 const About = ({ aboutRef }) => {
 
   const openResume = () => {
-    window.open("/resume2023.pdf", "_blank");
+    window.open("static/resume2023.pdf", "_blank");
   }
 
   return (
