@@ -28,7 +28,7 @@ const iconStyles = {
 const About = ({ aboutRef }) => {
 
   const openResume = () => {
-    window.open("static/resume-spring-2023.pdf", "_blank");
+    window.open("https://github.com/NhVNgn/files/blob/main/resume-spring-2023.pdf?raw=true", "_blank");
   }
 
   return (
